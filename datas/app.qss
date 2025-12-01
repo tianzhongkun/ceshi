@@ -1,0 +1,136 @@
+
+#frame_box {
+  background: rgba(17, 24, 30, 230);
+
+  border: 3px solid rgb(103, 82, 44);
+}
+
+#frame_doc {
+  background: rgba(17, 24, 30, 255);
+
+  border: 3px solid rgb(103, 82, 44);
+}
+
+#frame_chess {
+  background: rgba(17, 24, 30, 255);
+  /*border-radius: 10px;*/
+  /*border: 4px solid rgb(103, 82, 44);*/
+}
+
+QPlainTextEdit {
+   color: rgb(200, 200, 200);
+   background: rgba(100, 100, 100, 0);
+   border: 3px solid rgb(103, 82, 44);
+}
+
+QPushButton {
+  background: rgba(0, 0, 0, 0);
+  color: rgb(201, 189, 154);
+}
+
+QPushButton:hover {
+  background: rgb(30, 60, 60);
+  color: rgb(209, 199, 169);
+  border-radius: 10px;
+}
+QCheckBox {
+
+  color: rgb(201, 189, 154);
+}
+QCheckBox::indicator:checked {
+    background-color: rgb(122,104,71);
+    border: 2px solid rgb(122,104,71);
+    color: rgb(122,104,71);
+
+}
+
+QCheckBox::indicator {
+    background-color: rgb(129,133,135);
+    border: 2px solid rgb(129,133,135);
+    color: rgb(129,133,135);
+
+}
+QTableWidget {
+  background: rgba(200, 100, 0, 0);
+  border: 0px;
+}
+
+#lb_chess_level {
+  color: rgb(255, 255, 0);
+}
+
+#lb_chess_name {
+  color: rgb(255, 255, 255);
+  background: rgba(0, 0, 0, 150);
+}
+
+#lb_title {
+  color: rgb(255, 255, 255);
+}
+
+#lb_doc {
+  color: rgb(255, 255, 255);
+}
+
+/* 垂直滚动条 */
+QScrollBar:vertical {
+  background: rgb(17, 24, 30);
+  width: 12px;
+  margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+  background: rgb(141, 126, 97);
+  min-height: 20px;
+  border-radius: 3px;
+}
+
+QScrollBar::add-page, QScrollBar::sub-page {
+  background: rgb(141, 126, 97);
+}
+
+QScrollBar::handle:horizontal {
+  background: rgb(17, 24, 30);
+  min-width: 20px;
+  border-radius: 3px;
+}
+
+
+/* 滚动条箭头区域 */
+QScrollBar::add-page, QScrollBar::sub-page {
+  background: rgb(17, 24, 30);
+}
+
+QTableWidget::item:selected {
+  background-color: rgb(30, 60, 60); /* 选中项背景色（浅橙色） */
+  color: black; /* 选中项文字颜色 */
+}
+
+/* 可选：设置焦点框颜色 */
+QTableWidget {
+  outline: none; /* 移除默认虚线框 */
+  selection-background-color: rgb(10, 61, 63); /* 另一种设置方式（浅绿色） */
+}
+
+
+QToolTip {
+  opacity: 220;
+  background: rgba(17, 24, 30, 255);
+  border-radius: 6px;
+  border: 3px solid rgb(103, 82, 44);
+}
+
+QLineEdit {
+             background: rgba(17, 24, 30, 230);
+              color: #ffffff;  /* 白色文字 */
+              text-align: center;  /* 文字居中 */
+              border-radius: 5px;
+              padding: 5px;
+          }
+QLineEdit:hover {
+             background: rgba(17, 24, 30, 230);
+              color: #ffffff;  /* 白色文字 */
+              text-align: center;  /* 文字居中 */
+              border-radius: 5px;
+              padding: 5px;
+          }

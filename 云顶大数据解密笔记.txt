@@ -1,0 +1,65 @@
+
+
+const n = "Q0UajaC5OGr977NCGxPeUtvLUavGf6BWl9JecWqQuSfk7K";  //这里我省略了很多数据 太大了
+export {n as data};
+
+以上代码保存在 data-cn-uULXAacB.js 中
+
+解密过程代码如下 帮我封装成python代码
+
+F1 = {
+    currentData: null,
+    key: "dGZ0ZGFpYURleEVhbVZhag=="}
+
+const Gpe = async () => {
+    const e = i4();
+    try {
+        let t;
+        dl.includes(e) ? t = (await ZC(Object.assign({
+            "./data/data-ae.ts": () => wt( () => import("./data-ae-hFsPITQH.js"), []),
+            "./data/data-ar.ts": () => wt( () => import("./data-ar-BeHrf1oU.js"), []),
+            "./data/data-au.ts": () => wt( () => import("./data-au-DtIfdjRr.js"), []),
+            "./data/data-br.ts": () => wt( () => import("./data-br-C3VqG2oq.js"), []),
+            "./data/data-cn.ts": () => wt( () => import("./data-cn-uULXAacB.js"), []),
+            "./data/data-cz.ts": () => wt( () => import("./data-cz-rKvO9Xrm.js"), []),
+            "./data/data-de.ts": () => wt( () => import("./data-de-DTuc_oAT.js"), []),
+            "./data/data-es.ts": () => wt( () => import("./data-es-DNDZLA-v.js"), []),
+            "./data/data-fr.ts": () => wt( () => import("./data-fr-DXbINc_s.js"), []),
+            "./data/data-gb.ts": () => wt( () => import("./data-gb-DtIfdjRr.js"), []),
+            "./data/data-gr.ts": () => wt( () => import("./data-gr-DmZnx_wA.js"), []),
+            "./data/data-hu.ts": () => wt( () => import("./data-hu-W8cMEZ0o.js"), []),
+            "./data/data-id.ts": () => wt( () => import("./data-id-C24g5pfR.js"), []),
+            "./data/data-it.ts": () => wt( () => import("./data-it-BVKSrkVh.js"), []),
+            "./data/data-jp.ts": () => wt( () => import("./data-jp-B6gIEe9d.js"), []),
+            "./data/data-kr.ts": () => wt( () => import("./data-kr-D0C_5-_c.js"), []),
+            "./data/data-mx.ts": () => wt( () => import("./data-mx-BeHrf1oU.js"), []),
+            "./data/data-my.ts": () => wt( () => import("./data-my-DGghsKFm.js"), []),
+            "./data/data-ph.ts": () => wt( () => import("./data-ph-DtIfdjRr.js"), []),
+            "./data/data-pl.ts": () => wt( () => import("./data-pl-Bf3sJXbG.js"), []),
+            "./data/data-ro.ts": () => wt( () => import("./data-ro-bb0fqliy.js"), []),
+            "./data/data-ru.ts": () => wt( () => import("./data-ru-BMxRhStG.js"), []),
+            "./data/data-sg.ts": () => wt( () => import("./data-sg-DtIfdjRr.js"), []),
+            "./data/data-th.ts": () => wt( () => import("./data-th-DbZqcURP.js"), []),
+            "./data/data-tr.ts": () => wt( () => import("./data-tr-CEj_2YaH.js"), []),
+            "./data/data-tw.ts": () => wt( () => import("./data-tw-Bd14cf00.js"), []),
+            "./data/data-us.ts": () => wt( () => import("./data-us-DtIfdjRr.js"), []),
+            "./data/data-vn.ts": () => wt( () => import("./data-vn-DaKMbORr.js"), [])
+        }), `./data/data-${e.toLowerCase()}.ts`, 3)).data : t = (await wt(async () => {
+            const {data: o} = await import("./data-cn-uULXAacB.js");
+            return {
+                data: o
+            }
+        }
+        , [])).data;
+        const n = _4.enc.Utf8.stringify(_4.enc.Base64.parse(F1.key))
+          , a = _4.AES.decrypt(t, _4.enc.Utf8.parse(n), {
+            mode: _4.mode.ECB,
+            padding: _4.pad.Pkcs7
+        });
+        F1.currentData = JSON.parse(_4.enc.Utf8.stringify(a))
+    } catch (t) {
+        console.error("Error loading language data:", t)
+    }
+}
+;
+

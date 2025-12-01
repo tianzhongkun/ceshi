@@ -1,2 +1,69 @@
-# ceshi
-ceshi
+Disclaimer: 
+This tool does not involve any memory intrusion or modification behaviors. All features are green, healthy, and purely simulated! Theoretically, all applications carry account banning risks! As game environments are autonomous, users shall bear full responsibility for any consequences arising from using this tool. Hero lineups, equipment, synergies, classes and other detailed information displayed in the tool are sourced from official websites. All features are freely accessible without restrictions! The primary purpose is for technical exchange and learning! If users employ it in-game, that constitutes their personal determination! The developer neither advocates, demands, suggests, nor assumes responsibility! For any objections, immediately delete all program-related resources including executables! This tool is completely free and open-source. Commercial use is prohibited! Please comply with local laws and regulations! All consequences shall be borne by the user! The author shall not be liable for any form of responsibility, including criminal or civil liabilities!
+
+
+
+```
+
+源码非常简单没啥要求 请自己安装python 环境以及根据报错来安装各种常用的库
+目前源码已经完全开源 欢迎各位大佬们一起提交代码参与后续的更新和开发 提建议 提bug
+如果想要学习成品一键安装包 可以关注我加入粉丝群 ,不对外开放防止小黑子高潮
+```
+
+## 源码执行教程:
+#### 1.下载python 3.12版本以上
+
+```
+https://www.python.org/ftp/python/3.12.3/python-3.12.3-amd64.exe
+```
+#### 2.将源码下载下来 或者自己点那个下载按钮下载 :
+
+```
+git clone https://gitee.com/LanRenZhiNeng/lan-ren-tft.git
+```
+
+#### 3.下载所有需要的库和框架  如果网络不行 请自己百度去找镜像源:
+
+```
+pip install -r requirements.txt
+```
+#### 4.执行命令 就可以启动了  如果遇到错误,请拿错误去 自己问问GPT:
+
+```
+python main.py
+```
+
+#### **注意执行命令的目录必须是源码main.py同目录 否则会报错**
+
+
+免责声明:
+本工具并无任何入侵内存和修改的行为,所有功能绿色健康纯模拟!
+理论上来说任何东西都有封号风险!因为游戏是自由的,使用后出现的一切后果和意外都由用户自行承担
+工具中展示的阵容英雄装备羁绊职业等详细资料皆来自官方网站
+工具所有功能免费无限制开放使用!主要目的是为了交流和学习技术为主!
+如用户用于游戏,纯属用户个人坚持的行为!本人不提倡,不要求,不建议!不负责!
+如有异议,请立即删除本程序相关资源包括exe等!
+本工具完全免费开源,禁止用于商业用途!请注意不要违反当地的法律法规!一切后果自负!
+本人概不负责任何形式的责任,包括刑事和民事!
+
+
+请勿打扰! 也不要尝试本人分享的任何资源!谢谢配合! 一旦发现会直接拉黑处理!
+
+
+使用说明:
+
+1. 桌面-右键-显示设置  缩放必须100%
+2. 游戏分辨率必须是 16:9的尺寸的  如果你的显示器不是 ,那么请游戏内调整分辨率 为16:9的
+3, 游戏必须设置无边框 不然置顶不了窗口
+4. 必须右键管理员权限运行
+
+操作流程:
+1. 点击 官方阵容 
+2. 选择一个阵容  鼠标控制或者按 上 下 键 切换阵容
+3. 点击 小队规划   它会自动把阵容数据复制到官方自带的小队规划提醒中 
+   如果失败了,你可以自己手动粘贴 此时你的剪切板已经有阵容文本了
+
+热键说明:
+1. 按~ 反撇号  关闭自动拿牌
+2. 按 Home 键 隐藏/显示UI
+3. 按 上 下 方向键 切换阵容

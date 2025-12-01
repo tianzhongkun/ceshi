@@ -1,0 +1,9 @@
+numpy
+opencv_python
+Pillow
+psutil
+pynput
+PyQt5
+PyQt5_sip
+pywin32
+Requests

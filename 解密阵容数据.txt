@@ -1,0 +1,292 @@
+https://www.datatft.com/assets/CompTierView-CpWUR3L8.js  阵容解析
+
+import {e as ns, d as De} from "./encryptUtil-B0HZJ0Pl.js";
+https://www.datatft.com/assets/encryptUtil-B0HZJ0Pl.js  
+
+
+import {aS as A, N as O, af as $, ag as j, aO as D, v as S, a6 as F, aP as J} from "./index-DnxyUqc5.js";
+let g = {} 这里面的不需要你实我已经自己实现
+def A(): return result['heros15']  # 获取英雄列表
+
+
+def O(): return result['equips15']  # 获取装备列表
+
+
+def af(): return result["hexs15"]  # 获取海克斯列表
+
+
+def ag(): return result["anomalies15"]  # 获取强化符文列表
+
+def aO(code):
+    for i_item in result["hexs15"]:
+        for y_item in i_item:
+            if y_item['code'] == code:
+                return y_item
+    return None  # 根据ID获取海克斯对象
+
+
+def v(code):
+    for i_item in result["heros15"]:
+        if i_item['code'] == code:
+            return i_item
+    return None  # 根据ID获取英雄对象
+
+
+def a6(code):
+    for i_item in result["equips15"]:
+        if i_item['code'] == code:
+            return i_item
+    return None  # 根据ID获取装备对象
+
+
+def aP(code):
+    for i_item in result["anomalies15"]:
+        if i_item['code'] == code:
+            return i_item
+    return None  # 根据key获取强化符文对象
+
+
+
+import {e as ns, d as De} from "./encryptUtil-B0HZJ0Pl.js";
+下放是主要代码
+import {aS as A, N as O, af as $, ag as j, aO as D, v as S, a6 as F, aP as J} from "./index-DnxyUqc5.js";
+let g = {}
+  , d = {};
+const P = e => /^[0-9]+$/.test(e)
+  , v = () => {
+    g = {},
+    d = {};
+    const e = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+      , l = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!<>.";
+    for (let r = 0; r < 56; r++)
+        g["map" + r] = l.substr(r, 1),
+        d["map" + l.substr(r, 1)] = r;
+    const q = A();
+    for (let r = 0; r < q.length; r++) {
+        const t = q[r]
+          , o = parseInt((r / e.length).toString());
+        let f = (o > 0 ? o : "") + e.substr(r - o * e.length, 1);
+        t.code && (f = t.code),
+        g["hero" + t.chessId] = f,
+        d["hero" + f] = t.chessId
+    }
+    const s = O()
+      , I = [...s.filter(r => ![612, 545, 573, 31004, 31005, 31006, 31007, 2252].includes(r.equipId)), ...s.filter(r => [31004, 31005, 31006, 31007].includes(r.equipId))];
+    for (let r = 0; r < I.length; r++) {
+        const t = I[r]
+          , o = parseInt((r / e.length).toString());
+        let f = e.substr(o, 1) + e.substr(r - o * e.length, 1);
+        t.code && (f = t.code),
+        g["equip" + t.equipId] = f,
+        d["equip" + f] = t.equipId
+    }
+    const x = $();
+    for (let r = 0; r < x.flat().length; r++) {
+        const t = x.flat()[r];
+        let o = t.code;
+        g["hex" + t.hexId] = o,
+        d["hex" + o] = t.hexId
+    }
+    const c = j();
+    for (let r = 0; r < c.length; r++) {
+        const t = c[r];
+        let o = t.code;
+        g["powerup" + t.key] = o,
+        d["powerup" + o] = t.key
+    }
+}
+  , L = (e, l) => {
+    var r, t, o, f, H;
+    if (console.log("decrypt", e),
+    e = e.replace(/https:\/\/www\.datatft\.com\/team-builder\//i, "").replace(/https:\/\/www\.datatft\.com\/simulator\//i, "").replace("%7C", "|"),
+    e.endsWith(".") && (e = e.slice(0, -1)),
+    e.match(/s(\d{2})$/) && (e = e.slice(0, -3)),
+    !e)
+        return {
+            mapHeroItems: [],
+            mapHexs: [],
+            isError: !1
+        };
+    e = decodeURIComponent(e);
+    let s = 0;
+    const I = new Array(56).fill(null)
+      , x = [];
+    let c = !1;
+    for (; s < e.length; ) {
+        if (e[s] === "|") {
+            for (s++; s < e.length; ) {
+                const a = e.substr(s, 2)
+                  , i = d["hex" + a];
+                if (console.log(a, i),
+                i == null) {
+                    c = !0;
+                    const b = "强化符文解析失败";
+                    console.log(b),
+                    (r = l == null ? void 0 : l.onError) == null || r.call(l, b);
+                    break
+                }
+                const u = D(i);
+                console.log("hexInDB", u),
+                u && x.push(u),
+                s += 2
+            }
+            break
+        }
+        const M = e.substr(s++, 1)
+          , m = d["map" + M];
+        if (console.log(M, m),
+        m == null) {
+            c = !0;
+            const a = `map位置解析失败: ${M}, idx: ${s}, length: ${e.length}`;
+            console.log(a),
+            (t = l == null ? void 0 : l.onError) == null || t.call(l, a);
+            break
+        } else
+            m > 27 && ((o = l == null ? void 0 : l.onMapIndexChange) == null || o.call(l, m));
+        let k = e.substr(s, 2);
+        s += 2;
+        const p = d["hero" + k];
+        if (p == null) {
+            c = !0;
+            const a = "弈子解析失败:" + k + ".";
+            console.log(a),
+            (f = l == null ? void 0 : l.onError) == null || f.call(l, a);
+            break
+        }
+        const n = {
+            id: p,
+            index: m
+        }
+          , N = S(p);
+        if (P(e.substr(s, 1))) {
+            const a = []
+              , i = parseInt(e.substr(s++, 1));
+            for (let u = 0; u < i; u++) {
+                const b = e.substr(s, 2)
+                  , h = d["equip" + b];
+                if (h == null) {
+                    c = !0;
+                    const w = "装备解析失败";
+                    console.log(w),
+                    (H = l == null ? void 0 : l.onError) == null || H.call(l, w)
+                } else
+                    a.push(F(h));
+                s += 2
+            }
+            n.equips = a
+        }
+        if (e.substr(s, 1) == "~") {
+            s++;
+            let a = parseInt(e.substr(s++, 1))
+              , i = {
+                left: [],
+                right: [],
+                top: [],
+                bottom: []
+            };
+            for (let u = 0; u < a; u++) {
+                let b = e.substr(s++, 1)
+                  , h = "";
+                switch (b) {
+                case "L":
+                    h = "left";
+                    break;
+                case "R":
+                    h = "right";
+                    break;
+                case "T":
+                    h = "top";
+                    break;
+                case "B":
+                    h = "bottom";
+                    break;
+                default:
+                    c = !0,
+                    console.log("强化果实位置解析失败", b);
+                    break
+                }
+                if (!c) {
+                    let w = e.substr(s, 2)
+                      , E = d["powerup" + w];
+                    if (E == null)
+                        c = !0,
+                        console.log("强化果实解析失败", w);
+                    else {
+                        let B = J(E);
+                        if (B) {
+                            let C = JSON.parse(JSON.stringify(B));
+                            C.position = h,
+                            i[h].push(C)
+                        }
+                    }
+                    s += 2
+                }
+            }
+            c || (n.powerups = i)
+        }
+        if (n.hero = N,
+        e.substr(s, 1) === "*") {
+            s++;
+            const a = parseInt(e.substr(s++, 1));
+            n.stars = a
+        }
+        if (e.substr(s, 1) === "-" && (s++,
+        s++,
+        n.isMain = !0),
+        e.substr(s, 1) === "_") {
+            s++;
+            let a = e.substr(s, 2);
+            s += 2;
+            const i = d["hero" + a]
+              , u = S(i);
+            n.replaceId = i,
+            n.replaceIdPrice = u == null ? void 0 : u.price
+        }
+        I[m] = n
+    }
+    return {
+        mapHeroItems: I,
+        mapHexs: x,
+        isError: c
+    }
+}
+;
+export {L as d, v as e};
+
+
+https://www.datatft.com/assets/CompTierView-CpWUR3L8.js
+下放是主要代码
+const W = Me
+          , ce = async s => {
+            try {
+                if (U.value = !0,
+                !s && !W.id)
+                    return;
+                We("/team/strategy", {
+                    id: s || W.id
+                }).then(i => {
+                    d.value = i || {};
+                    const k = De(i.teamUrl, {
+                        onError: x => {
+                            console.error("解密错误:", x)
+                        }
+                    });
+                    k.isError || (L.value = k.mapHeroItems.slice(0, 28),
+                    B.value = k.mapHexs);
+                    const N = De(i.earlyTeamUrl, {});
+                    N.isError || (b.value = N.mapHeroItems.slice(0, 28)),
+                    U.value = !1
+                }
+                ).catch( () => {
+                    U.value = !1
+                }
+                )
+            } catch (i) {
+                console.error("获取阵容数据失败:", i),
+                ss.error("获取阵容数据失败")
+            }
+        }
+        ;
+
+
+请帮我解析成python版本的完整源码 解析过程必须完整

@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cce023e7-fa46-4994-985e-a60630c8be61" name="更改" comment="1.24 对接s15赛季">
+      <change beforePath="$PROJECT_DIR$/auto_tft.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_tft.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/app.qss" beforeDir="false" afterPath="$PROJECT_DIR$/datas/app.qss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/setting.json" beforeDir="false" afterPath="$PROJECT_DIR$/datas/setting.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/page_doc.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/page_doc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/page_equip.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/page_equip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/page_item_chess.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/page_item_chess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/page_item_strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/page_item_strategy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/page_location.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/page_location.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/page_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/page_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/page_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/page_set.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/page_strategy_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/page_strategy_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/setting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tft.py" beforeDir="false" afterPath="$PROJECT_DIR$/tft.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/check_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/check_update.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/form_nav.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/form_nav.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/form_nav.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ui/form_nav.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/form_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/form_set.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/form_set.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ui/form_set.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/form_strategy_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/form_strategy_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/form_strategy_list.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ui/form_strategy_list.ui" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" show_ignored="true">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="JavaScript File" />
+        <option value="package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2wdb5VifsMRQxH4IbqKsjWegJse" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.123.executor&quot;: &quot;Run&quot;,
+    &quot;Python.check_update.executor&quot;: &quot;Run&quot;,
+    &quot;Python.driver_controller.executor&quot;: &quot;Run&quot;,
+    &quot;Python.driver_controller32.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tft.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tft_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tft_decrypt_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tft_util.executor&quot;: &quot;Run&quot;,
+    &quot;Python.utils.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/pythonProjects/lan-ren-tft&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\pythonProjects\lan-ren-tft" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="check_update" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lan-ren-tft" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools/check_update.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lan-ren-tft" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tft" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lan-ren-tft" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tft.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tft_decrypt_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lan-ren-tft" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tft_decrypt_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tft_util" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lan-ren-tft" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tft_util.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.tft" />
+        <item itemvalue="Python.check_update" />
+        <item itemvalue="Python.tft_decrypt_data" />
+        <item itemvalue="Python.tft_util" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-PY-241.14494.241" />
+        <option value="bundled-python-sdk-0509580d9d50-28c9f5db9ffe-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.14494.241" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="cce023e7-fa46-4994-985e-a60630c8be61" name="更改" comment="" />
+      <created>1746374215095</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746374215095</updated>
+      <workItem from="1746374216157" duration="304000" />
+      <workItem from="1746374527629" duration="176000" />
+      <workItem from="1746374720032" duration="297000" />
+      <workItem from="1746375537192" duration="538000" />
+      <workItem from="1746376121192" duration="195000" />
+      <workItem from="1746376337159" duration="1617000" />
+      <workItem from="1746427382532" duration="1874000" />
+      <workItem from="1746446966153" duration="719000" />
+      <workItem from="1746493505792" duration="2603000" />
+      <workItem from="1746499926986" duration="551000" />
+      <workItem from="1746502134837" duration="2171000" />
+      <workItem from="1746516778349" duration="41000" />
+      <workItem from="1746542414926" duration="75000" />
+      <workItem from="1746580568915" duration="8416000" />
+      <workItem from="1746596555441" duration="493000" />
+      <workItem from="1746616283004" duration="280000" />
+      <workItem from="1746672822942" duration="1266000" />
+      <workItem from="1746675013773" duration="2314000" />
+      <workItem from="1746869070054" duration="1199000" />
+      <workItem from="1746872039724" duration="2120000" />
+      <workItem from="1747018580024" duration="9000" />
+      <workItem from="1747196797876" duration="1935000" />
+      <workItem from="1747242865036" duration="56000" />
+      <workItem from="1747269015260" duration="26201000" />
+      <workItem from="1747308625572" duration="2274000" />
+      <workItem from="1747321140600" duration="101000" />
+      <workItem from="1747357308841" duration="705000" />
+      <workItem from="1747360048197" duration="535000" />
+      <workItem from="1747363923724" duration="739000" />
+      <workItem from="1747556120619" duration="402000" />
+      <workItem from="1747557631849" duration="212000" />
+      <workItem from="1747557864810" duration="17000" />
+      <workItem from="1747560298942" duration="12000" />
+      <workItem from="1747909527871" duration="5072000" />
+      <workItem from="1748007906172" duration="19000" />
+      <workItem from="1748356415654" duration="4719000" />
+      <workItem from="1748407135528" duration="5235000" />
+      <workItem from="1748416753613" duration="934000" />
+      <workItem from="1748418198204" duration="335000" />
+      <workItem from="1748433549669" duration="17000" />
+      <workItem from="1748478578852" duration="3435000" />
+      <workItem from="1748482940581" duration="38000" />
+      <workItem from="1748497322517" duration="2157000" />
+      <workItem from="1748523082471" duration="1338000" />
+      <workItem from="1748525462676" duration="7000" />
+      <workItem from="1748579417828" duration="318000" />
+      <workItem from="1748768290785" duration="19000" />
+      <workItem from="1749039236493" duration="3507000" />
+      <workItem from="1749043173655" duration="606000" />
+      <workItem from="1749293142568" duration="677000" />
+      <workItem from="1749375977502" duration="747000" />
+      <workItem from="1749395855634" duration="3552000" />
+      <workItem from="1749406414108" duration="9000" />
+      <workItem from="1749436324409" duration="9497000" />
+      <workItem from="1749455549466" duration="14412000" />
+      <workItem from="1749550496667" duration="691000" />
+      <workItem from="1749725237628" duration="219000" />
+      <workItem from="1749879418792" duration="632000" />
+      <workItem from="1751708934591" duration="305000" />
+      <workItem from="1751717923698" duration="714000" />
+      <workItem from="1753438633263" duration="160000" />
+      <workItem from="1753441117994" duration="11000" />
+      <workItem from="1753930032637" duration="7395000" />
+      <workItem from="1754318371179" duration="1120000" />
+      <workItem from="1754546555148" duration="249000" />
+      <workItem from="1754734494541" duration="2021000" />
+      <workItem from="1754822451446" duration="471000" />
+      <workItem from="1754886870738" duration="16451000" />
+      <workItem from="1754976254114" duration="10045000" />
+      <workItem from="1754986435774" duration="6000" />
+      <workItem from="1755399551904" duration="1157000" />
+      <workItem from="1755508750111" duration="11966000" />
+      <workItem from="1755940225256" duration="1562000" />
+      <workItem from="1756448907573" duration="10426000" />
+      <workItem from="1756624112130" duration="3450000" />
+      <workItem from="1756709334910" duration="3296000" />
+      <workItem from="1756774829855" duration="242000" />
+      <workItem from="1756872398016" duration="8000" />
+      <workItem from="1760941506841" duration="1347000" />
+      <workItem from="1760969931297" duration="32000" />
+      <workItem from="1761194470775" duration="5650000" />
+    </task>
+    <task id="LOCAL-00001" summary="1.09">
+      <option name="closed" value="true" />
+      <created>1746374923265</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1746374923265</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1.09">
+      <option name="closed" value="true" />
+      <created>1746375962762</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746375962762</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1.09">
+      <option name="closed" value="true" />
+      <created>1746376279540</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746376279540</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1.09">
+      <option name="closed" value="true" />
+      <created>1746377692873</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1746377692873</updated>
+    </task>
+    <task id="LOCAL-00005" summary="1.09">
+      <option name="closed" value="true" />
+      <created>1746447495120</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1746447495120</updated>
+    </task>
+    <task id="LOCAL-00006" summary="1.10">
+      <option name="closed" value="true" />
+      <created>1746500207512</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1746500207512</updated>
+    </task>
+    <task id="LOCAL-00007" summary="1.11">
+      <option name="closed" value="true" />
+      <created>1746595516566</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1746595516566</updated>
+    </task>
+    <task id="LOCAL-00008" summary="1.11">
+      <option name="closed" value="true" />
+      <created>1746596606964</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1746596606964</updated>
+    </task>
+    <task id="LOCAL-00009" summary="1.12">
+      <option name="closed" value="true" />
+      <created>1746869634848</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1746869634848</updated>
+    </task>
+    <task id="LOCAL-00010" summary="1.13">
+      <option name="closed" value="true" />
+      <created>1747198681109</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1747198681109</updated>
+    </task>
+    <task id="LOCAL-00011" summary="1.14">
+      <option name="closed" value="true" />
+      <created>1747296162378</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1747296162378</updated>
+    </task>
+    <task id="LOCAL-00012" summary="1.18">
+      <option name="closed" value="true" />
+      <created>1747914288474</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1747914288474</updated>
+    </task>
+    <task id="LOCAL-00013" summary="1.19">
+      <option name="closed" value="true" />
+      <created>1748361087672</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1748361087672</updated>
+    </task>
+    <task id="LOCAL-00014" summary="1.2">
+      <option name="closed" value="true" />
+      <created>1748411039126</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1748411039126</updated>
+    </task>
+    <task id="LOCAL-00015" summary="1.2">
+      <option name="closed" value="true" />
+      <created>1748412174376</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1748412174376</updated>
+    </task>
+    <task id="LOCAL-00016" summary="1.21">
+      <option name="closed" value="true" />
+      <created>1748482962824</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1748482962824</updated>
+    </task>
+    <task id="LOCAL-00017" summary="1.21">
+      <option name="closed" value="true" />
+      <created>1748579603069</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1748579603069</updated>
+    </task>
+    <task id="LOCAL-00018" summary="1.22 新增胜率阵容抓取">
+      <option name="closed" value="true" />
+      <created>1749470869910</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1749470869910</updated>
+    </task>
+    <task id="LOCAL-00019" summary="1.22 新增胜率阵容抓取">
+      <option name="closed" value="true" />
+      <created>1749550514820</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1749550514820</updated>
+    </task>
+    <task id="LOCAL-00020" summary="1.23 优化 胜率阵容数据的准确性">
+      <option name="closed" value="true" />
+      <created>1751718405761</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1751718405761</updated>
+    </task>
+    <task id="LOCAL-00021" summary="1.24 对接s15赛季">
+      <option name="closed" value="true" />
+      <created>1753937843482</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1753937843483</updated>
+    </task>
+    <task id="LOCAL-00022" summary="1.24 对接s15赛季">
+      <option name="closed" value="true" />
+      <created>1753938578480</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1753938578480</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1.09" />
+    <MESSAGE value="1.10" />
+    <MESSAGE value="1.11" />
+    <MESSAGE value="1.12" />
+    <MESSAGE value="1.13" />
+    <MESSAGE value="1.14" />
+    <MESSAGE value="1.18" />
+    <MESSAGE value="1.19" />
+    <MESSAGE value="1.2" />
+    <MESSAGE value="1.21" />
+    <MESSAGE value="1.22 新增胜率阵容抓取" />
+    <MESSAGE value="1.23 优化 胜率阵容数据的准确性" />
+    <MESSAGE value="1.24 对接s15赛季" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.24 对接s15赛季" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/lan_ren_tft$utils.coverage" NAME="utils 覆盖结果" MODIFIED="1746873189823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
+    <SUITE FILE_PATH="coverage/lan_ren_tft$driver_controller32.coverage" NAME="driver_controller32 覆盖结果" MODIFIED="1746677282535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lan_ren_tft$tft.coverage" NAME="tft 覆盖结果" MODIFIED="1760942770236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lan_ren_tft$tft_util.coverage" NAME="tft_util 覆盖结果" MODIFIED="1754985625216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lan_ren_tft$main.coverage" NAME="main 覆盖结果" MODIFIED="1761201069863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lan_ren_tft$driver_controller.coverage" NAME="driver_controller 覆盖结果" MODIFIED="1746676440030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lan_ren_tft$123.coverage" NAME="123 覆盖结果" MODIFIED="1749398547567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lan_ren_tft$tft_decrypt_data.coverage" NAME="tft_decrypt_data 覆盖结果" MODIFIED="1755941533514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lan_ren_tft$tft_data.coverage" NAME="tft_data 覆盖结果" MODIFIED="1749042037317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lan_ren_tft$check_update.coverage" NAME="check_update 覆盖结果" MODIFIED="1756458871930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
+  </component>
+</project>
